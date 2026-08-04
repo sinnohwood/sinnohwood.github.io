@@ -15,11 +15,13 @@
             margin : 0;
             padding : 0;
             height : 100%;
+            font-size: 18px;
 
             background-image : url("./river.jpg");
             background-repeat : no-repeat;
             background-attachment : fixed;
             background-size : cover;
+            background-position: center;
         }
         a:link {
             color : #7FDDFF;
@@ -30,29 +32,66 @@
         a:hover {
             background-color : #414141;
         }
+        .main {
+            display:grid; 
+            grid-template-rows:auto; 
+            float:right; 
+            padding-left:1%; 
+            padding-right:1%; 
+            position: absolute; 
+            top: 50%;
+            transform: translate(0, -50%);
+            right: 15vw; 
+            background-color:#22222280; 
+            backdrop-filter: blur(8px);
+        }
+        .profile {
+            float:left; 
+            padding-right:15px; 
+            width:96px; 
+            height:96px;
+        }
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            font-size: 12px;
+        }
+
+        @media (width <= 600px) {
+            .main {
+                right: auto;  
+                width: 100%;
+                justify-content: center;
+            }
+        }
     </style>
 
 </head>
 
 <body>
-    <div style="display:grid; grid-template-rows:auto; float:right; padding-left:1%; padding-right:1%; position:absolute; top:35%; right:15%; background-color:#22222280; backdrop-filter: blur(8px)">
+    <div class="main">
         <div>
             <p>
-                <img src="./sinnohwood.jpg" style="float:left; padding-right:15px; width:96px; height:96px;">
+                <img src="./sinnohwood.jpg" class="profile">
                 <span style="font-size:48px"><b>Rowan Wood</b></span>
                 <br>
                 <span style="font-size:16px"><i>@sinnohwood</i></span>
             </p>
         </div>
         <div>
-            <p style="font-size:18px">
+            <p>
                 Eagle Scout, Lifeguard, Robotics Nerd
                 <br>
-                <br> Projects: <a href="https://github.com/elapse-app">Elapse</a>
-                <br>
-                <br> Find Me: <a href="https://github.com/sinnohwood">Github</a> <a href="https://instagram.com/sinnohwood">Instagram</a> <a href="https://www.linkedin.com/in/rowan-wood-495552415/">LinkedIn</a> <a href="./piplup">Piplup</a>
+                <br> Projects: <a target="_blank" href="https://github.com/elapse-app">Elapse</a>
+                <br> Blog: <a href="#">Coming Soon!</a>
+                <br> Find Me: <a target="_blank" href="https://github.com/sinnohwood">Github</a> <a href="https://instagram.com/sinnohwood">Instagram</a> <a target="_blank" href="https://www.linkedin.com/in/rowan-wood-495552415/">LinkedIn</a> <a href="./piplup">Piplup</a>
             </p>
         </div>
+    </div>
+    <div class="footer">
+        <span style="float: left; margin-left: 10px; margin-bottom: 10px;"><a href="./simple">Why so simple?</a></span>
+        <span style="float: right; margin-right: 10px; margin-bottom: 10px;">&copy; 2026 sinnohwood</span>
     </div>
 </body>
 

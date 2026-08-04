@@ -30,6 +30,20 @@
         a:hover {
             background-color : #414141;
         }
+
+        .main {
+            display:grid; 
+            grid-template-rows:auto; 
+            float:right; 
+            padding-left:1%; 
+            padding-right:1%; 
+            position:absolute; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            background-color:#22222280; 
+            backdrop-filter: blur(8px)
+        }
     </style>
 
 </head>
@@ -37,7 +51,7 @@
 <body>
     <div style="width: 100vw; height: 100dvh; backdrop-filter: blur(8px)"></div>
 
-    <div style="display:grid; grid-template-rows:auto; float:right; padding-left:1%; padding-right:1%; position:absolute; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color:#22222280; backdrop-filter: blur(8px)">
+    <div class="main">
         <div>
             <p>
                 <img src="./piplup.png" style="float:left; padding-right:15px; width:96px; height:96px;">
@@ -54,7 +68,7 @@
                 development, participated in ctf challenges,<br>
                 discovered my love for engineering and robotics,<br>
                 and followed my passions<br>
-                <br>find piplup: <a href="https://piplup7575.co">piplup7575.co</a>
+                <br>find piplup: <a target="_blank" href="https://piplup7575.co">piplup7575.co</a>
                 <span style="font-size:18px; float: right;"><a href="../">go back</a></span>
             </p>
         </div>
