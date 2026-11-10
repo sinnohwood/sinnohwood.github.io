@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sinnohwood</title>
+    <link rel="icon" type="image/png" href="../img.png">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+        body {
+            color : white;
+            font-family : roboto;
+            margin : 0;
+            padding : 0;
+            height : 100%;
+
+            background-image : url("../river.jpg");
+            background-repeat : no-repeat;
+            background-attachment : fixed;
+            background-size : cover;
+            background-position: center;
+        }
+        a:link {
+            color : #7FDDFF;
+        }
+        a:visited {
+            color : #d280ff;
+        }
+        a:hover {
+            background-color : #414141;
+        }
+
+        .main {
+            display:grid; 
+            grid-template-rows:auto; 
+            float:right; 
+            padding-left:1%; 
+            padding-right:1%; 
+            position:absolute; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            background-color:#22222280; 
+            backdrop-filter: blur(8px)
+        }
+
+        @media (width <= 1000px) {
+            .main {
+                width: 100vw;
+                left: 0;
+                transform: translate(0, -50%);
+                justify-content: center;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div style="width: 100vw; height: 100dvh; backdrop-filter: blur(8px)"></div>
+
+    <div class="main">
+        <div>
+            <p style="font-size:18px">
+                Contact Me!<br><br>
+                
+                You can shoot me a DM on Instagram or LinkedIn,<br>
+                and I'll respond as soon as I can.<br><br>
+
+                You can also send me an email at the address below:<br>
+                hello AT sinnohwood DOT com<br><br>
+
+                Thanks for reaching out!
+                
+                <span style="font-size:18px; float: right;"><a href="../">Go Back</a></span>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
